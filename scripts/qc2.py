@@ -25,5 +25,5 @@ for files in range(trim):
 	#samdir = orig_dir + "/" + fastq_files[files]
 	outdir = qc_outdir + "/" + sample_name + "_trimmed.fastq"
 	# Remove Illumina Sequences and then keep any sequence that is longer than 35 bp
-	os.system("java -jar /home/chris/bin/trimmomatic/trimmomatic-0.33.jar SE %s %s ILLUMINACLIP:TruSeq3-SE:2:30:10 MINLEN:35 >> %s" % (fastq_files[files], outdir, logfile))
+	os.system("java -jar /home/chris/bin/trimmomatic/trimmomatic-0.33.jar SE %s %s ILLUMINACLIP:/home/chris/bin/trimmomatic/adapters/TruSeq3-SE.fa:2:30:10 MINLEN:35 >> %s" % (fastq_files[files], outdir, logfile))
 
