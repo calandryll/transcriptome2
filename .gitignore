@@ -1,0 +1,32 @@
+# Don't clone the programs directory
+software/
+# Don't clone the assembly stuff
+reference/assembly/
+rsem/
+#Don't clone diff data
+diff/
+
+# Ignore certain files
+*.fasta
+*.fastq
+*.gff
+*.gff3
+*.fa
+*.bt2
+*.ebwt
+*.gtf
+*.bam
+*.bed
+*.fpkm_tracking
+*.gz
+*.7z
+cuffData.db
+*.diff
+*.xlsx
+*.csv
+*.finished
+*.read_count
+*.kmer_count
+*.tar
+*.hmm
+*.pep
