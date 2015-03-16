@@ -7,7 +7,7 @@
 import os
 import glob
 
-orig_dir = "/media/transcriptome/original"
+orig_dir = "/media/transcriptome/originals"
 qc_outdir = "/media/transcriptome/qc"
 adapters = "/media/transcriptome/fasta/Illumina_truseq_adapter.fasta"
 
