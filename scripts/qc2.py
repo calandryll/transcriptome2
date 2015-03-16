@@ -2,6 +2,7 @@
 # Run Trimmomatic to remove Illumina adapter sequences
 # Update on: 031615
 # Updated for new system analysis
+# Going to use default TruSeq3 adapters included with trimmomatic
 
 # Import OS to run external programs
 import os
@@ -9,8 +10,8 @@ import glob
 
 orig_dir = "/media/transcriptome/originals"
 qc_outdir = "/media/transcriptome/qc"
-adapters = "/media/transcriptome/fasta/Illumina_truseq_adapter.fasta"
-
+#adapters = "/media/transcriptome/fasta/Illumina_truseq_adapter.fasta"
+logfile = "/media/transcriptome/qc/log.txt"
 
 print "Scanning directory %s..." % (orig_dir)
 # Pull in files
@@ -24,5 +25,5 @@ for files in range(trim):
 	#samdir = orig_dir + "/" + fastq_files[files]
 	outdir = qc_outdir + "/" + sample_name + "_trimmed.fastq"
 	# Remove Illumina Sequences and then keep any sequence that is longer than 35 bp
-	os.system("java -jar /home/chris/bin/trimmomatic/trimmomatic-0.33.jar SE %s %s ILLUMINACLIP:%s:2:30:10 MINLEN:35" % (fastq_files[files], outdir, adapters))
+	os.system("java -jar /home/chris/bin/trimmomatic/trimmomatic-0.33.jar SE %s %s ILLUMINACLIP:TruSeq3-SE:2:30:10 MINLEN:35 >> %s" % (fastq_files[files], outdir, logfile))
 
