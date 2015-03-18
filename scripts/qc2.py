@@ -3,6 +3,7 @@
 # Update on: 031615
 # Updated for new system analysis
 # Going to use default TruSeq3 adapters included with trimmomatic
+# From: http://www.usadellab.org/cms/?page=trimmomatic
 
 # Import OS to run external programs
 import os

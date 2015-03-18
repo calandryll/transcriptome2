@@ -18,13 +18,13 @@ print "Scanning Raw Directory..."
 # Pull file names from raw
 #fastq_rfiles = glob.glob1(fastq_raw, "*.fastq")
 fastq_tfiles = sorted(glob.glob1(fastq_trimmed, "*.fastq"))
-print fastq_tfiles
+#print fastq_tfiles
 
 trim = len(list(fastq_tfiles))
 for files in range(trim):
-	print fastq_tfiles[files]
+	#print fastq_tfiles[files]
 
 	fastqc_trun = fastq_trimmed + fastq_tfiles[files]
 	
 	# Run fastqc
-	os.system("fastqc -o %s %s" % (fastq_toutput, fastqc_trun))
+	os.system("~/bin/FastQC/fastqc -o %s %s" % (fastq_toutput, fastqc_trun))

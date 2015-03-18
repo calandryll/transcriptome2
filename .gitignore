@@ -5,6 +5,9 @@ reference/assembly/
 rsem/
 #Don't clone diff data
 diff/
+# Ignore reports as well
+reports/
+trinity_out_dir/
 
 # Ignore certain files
 *.fasta
