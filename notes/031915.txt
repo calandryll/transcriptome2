@@ -1,0 +1,5 @@
+03/19/15
+========
+
+SOAP de Novo was performed using a minimum map length of 200 with the same starting parameters.  Once compeleted fasta files will be clustered using usearch.
+

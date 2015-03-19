@@ -1,0 +1,199 @@
+03/18/15
+========
+
+Abundances were estimated for the combined file (H_akashiwo.fastq) using the RSEM utility in Trinity
+	Command: 
+		chris@Lachesis:/media/transcriptome$ ~/bin/trinityrnaseq/util/align_and_estimate_abundance.pl --transcripts trinity_out_dir/Trinity.fasta --est_method RSEM --aln_method bowtie2 --trinity_mode --seqType fq --single qc/H_akashiwo.fastq
+
+Lowly supported transcripts will be filtered using a FPKM of <10
+	Command:
+		chris@Lachesis:/media/transcriptome$ ~/bin/trinityrnaseq/util/filter_fasta_by_rsem_values.pl --rsem_output rsem/RSEM.isoforms.results --fasta trinity_out_dir/Trinity.fasta --output trinity_out_dir/Trinity_rsem.fasta -e remove_rsem.fasta -c 10
+
+
+RSEM Removal Stats
+==================
+
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity 'genes':	13807
+Total trinity transcripts:	16621
+Percent GC: 52.55
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+	Contig N10: 2359
+	Contig N20: 1873
+	Contig N30: 1564
+	Contig N40: 1340
+	Contig N50: 1155
+
+	Median contig length: 721
+	Average contig: 882.90
+	Total assembled bases: 14674640
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+#####################################################
+
+	Contig N10: 2388
+	Contig N20: 1896
+	Contig N30: 1586
+	Contig N40: 1362
+	Contig N50: 1173
+
+	Median contig length: 747
+	Average contig: 904.93
+	Total assembled bases: 12494409
+
+
+Clustering of Reference sequences
+=================================
+Sequences were clustered using usearch (8.01616_i86linux32)
+
+	Command:
+		usearch8.0.1616_i86linux32 -cluster_fast trinity_out_dir/Trinity_rsem.fasta -id 0.9 -centroids trinity_out_dir/Trinity_rsem_cluster.fasta -uc clusters.uc
+
+usearch v8.0.1616_i86linux32, 4.0Gb RAM (32.9Gb total), 4 cores
+(C) Copyright 2013-15 Robert C. Edgar, all rights reserved.
+http://drive5.com/usearch
+
+Licensed to: cmain@udel.edu
+
+00:00  55Mb  100.0% Reading trinity_out_dir/Trinity_rsem.fasta
+00:00  21Mb Pass 1...done.                                    
+02:59 137Mb  100.0% 13266 clusters, max size 9, avg 1.3
+03:00 145Mb  100.0% Building MSAs                      
+                                 
+      Seqs  16621 (16.6k)
+  Clusters  13267 (13.3k)
+  Max size  9
+  Avg size  1.3
+  Min size  1
+Singletons  10682 (10.7k), 64.3% of seqs, 80.5% of clusters
+   Max mem  170Mb
+      Time  03:00
+Throughput  92.3 seqs/sec.
+
+
+Clustering Stats
+================
+
+
+chris@Lachesis:/media/transcriptome$  ~/bin/trinityrnaseq/util/TrinityStats.pl trinity_out_dir/Trinity_rsem_cluster.fasta
+
+
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity 'genes':	12512
+Total trinity transcripts:	13267
+Percent GC: 52.76
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+	Contig N10: 2352
+	Contig N20: 1862
+	Contig N30: 1556
+	Contig N40: 1335
+	Contig N50: 1153
+
+	Median contig length: 737
+	Average contig: 891.73
+	Total assembled bases: 11830554
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+#####################################################
+
+	Contig N10: 2377
+	Contig N20: 1880
+	Contig N30: 1570
+	Contig N40: 1349
+	Contig N50: 1165
+
+	Median contig length: 747
+	Average contig: 903.88
+	Total assembled bases: 11309366
+
+
+Clustering of non-RSEM Assembly
+===============================
+Command:
+	chris@Lachesis:/media/transcriptome$ usearch8.0.1616_i86linux32 -cluster_fast trinity_out_dir/Trinity.fasta -id 0.9 -centroids trinity_out_dir/Trinity_cluster.fasta -uc clusters.uc
+
+usearch v8.0.1616_i86linux32, 4.0Gb RAM (32.9Gb total), 4 cores
+(C) Copyright 2013-15 Robert C. Edgar, all rights reserved.
+http://drive5.com/usearch
+
+Licensed to: cmain@udel.edu
+
+00:00  97Mb  100.0% Reading trinity_out_dir/Trinity.fasta
+00:00  64Mb Pass 1...done.                               
+21:01 387Mb  100.0% 73048 clusters, max size 17, avg 1.2
+                                                        
+      Seqs  87844 (87.8k)
+  Clusters  73049 (73.0k)
+  Max size  17
+  Avg size  1.2
+  Min size  1
+Singletons  61190 (61.2k), 69.7% of seqs, 83.8% of clusters
+   Max mem  443Mb
+      Time  21:02
+Throughput  69.6 seqs/sec.
+
+chris@Lachesis:/media/transcriptome$ ~/bin/trinityrnaseq/util/TrinityStats.pl trinity_out_dir/Trinity_cluster.fasta
+
+
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity 'genes':  70504
+Total trinity transcripts:      73049
+Percent GC: 53.34
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+        Contig N10: 2000
+        Contig N20: 1488
+        Contig N30: 1200
+        Contig N40: 968
+        Contig N50: 778
+
+        Median contig length: 417
+        Average contig: 604.30
+        Total assembled bases: 44143676
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+#####################################################
+
+        Contig N10: 2004
+        Contig N20: 1491
+        Contig N30: 1201
+        Contig N40: 967
+        Contig N50: 775
+
+        Median contig length: 415
+        Average contig: 602.94
+        Total assembled bases: 42509332
+
+
+SOAP De Novo Assembly
+=====================
+
+De Novo assembly will also use SOAP to assemble a potential reference genome.  A KMer size of 35 will be used.
+
+Command:
+	SOAPdenovo-Trans-127mer all -s H_akashiwo.config -o SOAP_Ha -k 35 -p 4
+
+The first run was used using a map length of 32.  A min map length of 200 will also be used and examined.

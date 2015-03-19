@@ -8,6 +8,7 @@ diff/
 # Ignore reports as well
 reports/
 trinity_out_dir/
+SOAP/
 
 # Ignore certain files
 *.fasta
