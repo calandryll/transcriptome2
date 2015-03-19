@@ -34,3 +34,5 @@ cuffData.db
 *.tar
 *.hmm
 *.pep
+*.bam.ok
+*.uc
