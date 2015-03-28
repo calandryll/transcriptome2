@@ -1,14 +1,15 @@
 # Don't clone the programs directory
 software/
 # Don't clone the assembly stuff
-reference/assembly/
-rsem/
+assembly/
 #Don't clone diff data
 diff/
 # Ignore reports as well
 reports/
-trinity_out_dir/
+trinity/
 SOAP/
+velvet/
+transabyss/
 
 # Ignore certain files
 *.fasta

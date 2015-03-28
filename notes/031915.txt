@@ -3,3 +3,33 @@
 
 SOAP de Novo was performed using a minimum map length of 200 with the same starting parameters.  Once compeleted fasta files will be clustered using usearch.
 
+
+
+fasta_stats.py results
+======================
+
+Assemblies using Trinity and SOAP were run using the fasta_stats.py:
+
+Trinity.fasta
+=============
+N50: 816.0
+Maximum contig length: 26504
+Median contig length: 433.0
+Mean contig length: 626.421656573
+# of contigs: 87844
+
+Trinity_rsem.fasta (Removal of <10 FPKM)
+========================================
+N50: 1155.0
+Maximum contig length: 9392
+Median contig length: 721.0
+Mean contig length: 882.897539258
+# of contigs: 16621
+
+Trinity_rsem_cluster.fasta (Clustering using usearch)
+=====================================================
+N50: 1153
+Maximum contig length: 9392
+Median contig length: 737.0
+Mean contig length: 891.727896284
+# of contigs: 13267

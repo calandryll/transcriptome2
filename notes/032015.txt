@@ -1,0 +1,22 @@
+03/20/15
+========
+
+Velvet/Oases will also be examined for assembling transcriptome.  A kmer of 31 was used for assembly.
+
+Command:
+	velveth velvet 31 -fastq qc/H_akashiwo.fastq
+	velvetg velvet -read_trkg yes
+
+Velvet stats
+============
+
+Final graph has 1491343 nodes and n50 of 170, max 9716, total 59704729, using 155222474/328353127 reads
+
+
+Assembly will be tried (velvetg) with different parameters when it comes to coverage cutoff
+
+Command:
+	velvetg velvet -read_trkg yes -cov_cutoff auto -exp_cov auto
+	Process killed for unknown reason
+Rerun Command:
+	velvetg velvet -read_trkg yes -cov_cutoff auto

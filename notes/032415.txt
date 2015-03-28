@@ -1,0 +1,20 @@
+03/24/15
+========
+
+Abundances were estimated for the combined file (H_akashiwo.fastq) using the RSEM utility in Trinity
+	Command: 
+		chris@Lachesis:/media/transcriptome$ ~/bin/trinityrnaseq/util/align_and_estimate_abundance.pl --transcripts trinity_out_dir/Trinity.fasta --est_method RSEM --aln_method bowtie2 --trinity_mode --seqType fq --single qc/H_akashiwo.fastq
+
+Filtering of low FPKM and clustering:
+
+	chris@Lachesis:/media/transcriptome$ ~/bin/trinityrnaseq/util/filter_fasta_by_rsem_values.pl --rsem_output trinity_out_dir/RSEM.isoforms.results --fasta trinity_out_dir/Trinity.fasta --output trinity_out_dir/Trinity_rsem.fasta -e remove_rsem.fasta -c 10
+	chris@Lachesis:/media/transcriptome$ usearch8.0.1616_i86linux32 -cluster_fast trinity_out_dir/Trinity_rsem.fasta -id 0.9 -centroids trinity_out_dir/Trinity_rsem_cluster.fasta -uc clusters.uc
+	chris@Lachesis:/media/transcriptome$ usearch8.0.1616_i86linux32 -cluster_fast trinity_out_dir/Trinity.fasta -id 0.9 -centroids trinity_out_dir/Trinity_cluster.fasta -uc clusters.uc
+
+Velvet/Oases Assembly of Knorm
+==============================
+
+Commands:
+	velveth velvet 31 -short -fastq qc/H_akashiwo.fastq
+	velvetg velvet -min_contig_lgth 200 -cov_cutoff auto -exp_cov auto
+	oases velvet (defaults)

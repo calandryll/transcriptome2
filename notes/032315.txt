@@ -1,0 +1,66 @@
+03/23/15
+========
+
+SOAP assembly was tried again with different options in attempt to get Oases working correctly.
+
+Commands:
+	velveth velvet 31 -short -fastq qc/H_akashiwo.fastq  
+	velvetg velvet -min_contig_length 200 -cov_cutoff 10  (dir: cov_cutoff_10/)
+	velvetg velvet -min_contig_length 200 -cov_cutoff auto -exp_cov 10 (dir: cov_cutoff_auto) (killed)
+	velvetg velvet -min_contig_length 200 -cov_cutoff 10 -exo_cov 15 (dif: cov_exp_15)
+
+	oases 
+
+Median coverage depth is 15.9 try running at a 10 for coverage and 15 for expected
+
+To fix the issue with Killed error.  See: http://ged.msu.edu/angus/diginorm-2012/tutorial.html#single-pass-diginorm-for-mrnaseq
+
+Normlization using khmer
+
+Commands:
+	normalize-by-median.py -C 20 -k 20 -N 4 -x 2e9 qc/H_akashiwo.fastq
+	
+
+Trinity Re-run
+==============
+
+khmer normalized samples were run using Trinity (v2.0.6)
+
+Command:
+	Trinity --seqType fq --max_memory 30G --CPU 4 --single qc/H_akashiwo_qc_khmer.fastq
+
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity 'genes':  83013
+Total trinity transcripts:      87562
+Percent GC: 53.22
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+        Contig N10: 1908
+        Contig N20: 1435
+        Contig N30: 1153
+        Contig N40: 938
+        Contig N50: 756
+
+        Median contig length: 422
+        Average contig: 597.64
+        Total assembled bases: 52330879
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+#####################################################
+
+        Contig N10: 1891
+        Contig N20: 1424
+        Contig N30: 1146
+        Contig N40: 930
+        Contig N50: 750
+
+        Median contig length: 419
+        Average contig: 594.22
+        Total assembled bases: 49328290

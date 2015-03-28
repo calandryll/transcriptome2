@@ -1,0 +1,36 @@
+03/25/15
+========
+
+SOAPdenovo-Trans Assembly
+=========================
+
+Commands:
+	SOAPdenovo-Trans-127mer all -s H_akashiwo.config -o SOAP_Ha -k 35 -p 4
+	chris@Lachesis:/media/transcriptome/SOAP$ SOAPdenovo-Trans-127mer all  -o SOAP_Ha -k 35 -p 4 -d 10 -M 3 -s H_akashiwo.config
+
+
+Trans-ABySS Assembly
+====================
+
+Asembly was done using the defaults for Trans-ABySS
+
+Command:
+	transabyss --se qc/H_akashiwo.fastq --outdir transabyss/norm --threads 4
+	transabyss --se qc/H_akashiwo_knorm.fastq --outdir transabyss/knorm --threads 4
+
+
+Clustering
+==========
+
+Clustering of SOAP, Oases and TransABySS knorm derived fasta files were run
+Command:
+	chris@Lachesis:/media/transcriptome/assembly$ usearch8.0.1616_i86linux32 -cluster_fast fasta -id 0.9 -centroids *_cluster.fasta -uc clusters.uc
+
+Trinity
+=======
+
+Trinity will be run on non-normalized samples
+
+Commands:
+
+	chris@Lachesis:/media/transcriptome$ ~/bin/trinityrnaseq/util/align_and_estimate_abundance.pl --transcripts trinity_out_dir/Trinity.fasta --seqType fq --single qc/H_akashiwo.fastq --est_method RSEM --aln_method bowtie2 --output_dir trinity_out_dir/rsem --trinity_mode --prep_reference

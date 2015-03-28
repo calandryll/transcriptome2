@@ -1,0 +1,7 @@
+03/21/15
+========
+
+The exp_cov option for velvet causes a Killed response.  Most likely the issue is from lack of memory.  Oases will be run with defaults for both defualts velvet and cov_cutoff auto assemblies.
+
+Command:
+	oases velvet/[velvet assembly directory]
