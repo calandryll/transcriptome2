@@ -37,3 +37,4 @@ cuffData.db
 *.pep
 *.bam.ok
 *.uc
+*.rsem
