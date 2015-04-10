@@ -1,0 +1,7 @@
+03/29/15
+========
+
+RSEM Evaluation using DETONATE 1.9 (See: http://deweylab.biostat.wisc.edu/detonate/vignette.html) using the combined QCed fastq from Heterosigma/Vibrio experiment
+
+Command:
+	~/bin/detonate-1.9/rsem-eval/rsem-eval-calculate-score --bowtie2 ../qc/Ha_Vib.fastq [Assembly].fasta [Assembly] 51 -p 4

@@ -55,6 +55,7 @@ blarg = seqlength>=1000
 output_handle.write("Maximum contig length: %s" % seqlength[-1] + "\n")
 output_handle.write("Median contig length: %s" % numpy.median(seqlength) + "\n")
 output_handle.write("Mean contig length: %s" % numpy.mean(seqlength) + "\n")
+output_handle.write("Standard deviation contig length: %s" % numpy.std(seqlength) + "\n")
 output_handle.write("# of contigs: %s" % len(seqlength) + "\n")
 output_handle.close()
 fasta_handle.close()
