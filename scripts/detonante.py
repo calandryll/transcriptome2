@@ -8,6 +8,7 @@ import glob
 
 assem_dir = "/media/transcriptome/assembly"
 fastq_file = "/media/transcriptome/qc/Ha_Vib.fastq"
+length_file = "/media/transcriptome/assembly/ectocarpus.txt" # Transcript mean and SD lengths
 
 print "Scanning directory %s..." % (assem_dir)
 # Pull in files
@@ -19,4 +20,4 @@ for files in range(trim):
 	sample_name = os.path.splitext(os.path.basename(fasta_files[files]))[0]
 	print "Analyzing %s..." % (sample_name)
 	#print fasta_files[files]
-	os.system("/home/chris/bin/detonate-1.9/rsem-eval/rsem-eval-calculate-score --bowtie2 %s %s %s 51 -p 4" % (fastq_file, fasta_files[files], sample_name))
+	os.system("/home/chris/bin/detonate-1.9/rsem-eval/rsem-eval-calculate-score --bowtie2 %s %s %s 51 -p 4 --transcript-length-parameters %s" % (fastq_file, fasta_files[files], sample_name, length_file))
