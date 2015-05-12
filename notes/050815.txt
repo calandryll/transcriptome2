@@ -1,0 +1,15 @@
+05/08/2015
+==========
+
+TransABySS_norm_combined_cap3.fasta was used as the reference genome for differential expression.  Highest N50 with only 3 contigs with no reads aligned to.
+
+Command:
+	analysis.py
+
+The TransABySS file had sequences that are smaller than 200 bp, which throws the data off.
+
+Trinity_norm_combined_cap3.fasta was also run
+
+TransABySS_combined_cap3 and Assembly_combined_cap3 were also run.
+
+Assembly_combined_cap3.fasta had several sequences that were <200 bp.  

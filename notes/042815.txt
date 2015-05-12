@@ -1,0 +1,4 @@
+04/28/2015
+==========
+
+Assemblies with the highest N50 from each method were chosen for contig formation using CAP3 (defaults).  If there were multiple assemblies under knorm, tnorm or norm, they were combined and then CAP3 was run.  A total assembly of the top assemblies was also combined and contigs were formed using CAP3.

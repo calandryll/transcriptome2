@@ -1,0 +1,416 @@
+File: Oases_knorm
+N50: 796.0
+Maximum contig length: 16771
+Median contig length: 215.0
+Mean contig length: 428.398661468
+Standard deviation contig length: 522.247774475
+# of contigs: 152854
+
+File: Oases_knorm_cleaned
+N50: 964
+Maximum contig length: 16771
+Median contig length: 471.0
+Mean contig length: 686.058552283
+Standard deviation contig length: 609.829140591
+# of contigs: 81107
+
+File: Oases_knorm_cleaned_rsem
+N50: 1210
+Maximum contig length: 16771
+Median contig length: 709.0
+Mean contig length: 895.506448518
+Standard deviation contig length: 730.160480247
+# of contigs: 18764
+
+File: Oases_knorm_cluster
+N50: 686.0
+Maximum contig length: 16771
+Median contig length: 198.0
+Mean contig length: 386.538677364
+Standard deviation contig length: 470.463317321
+# of contigs: 129378
+
+File: Oases_knorm_cluster_cleaned
+N50: 881.0
+Maximum contig length: 16771
+Median contig length: 439.0
+Mean contig length: 639.453657322
+Standard deviation contig length: 563.531674838
+# of contigs: 64282
+
+File: Oases_knorm_cluster_cleaned_rsem
+N50: 1203
+Maximum contig length: 16771
+Median contig length: 725.0
+Mean contig length: 906.585870285
+Standard deviation contig length: 731.636023788
+# of contigs: 18132
+
+File: Oases_knorm_cluster_rsem
+N50: 1172
+Maximum contig length: 16771
+Median contig length: 572.0
+Mean contig length: 770.810413695
+Standard deviation contig length: 729.044162598
+# of contigs: 21030
+
+File: Oases_knorm_rsem
+N50: 1173
+Maximum contig length: 16771
+Median contig length: 534.0
+Mean contig length: 747.606180414
+Standard deviation contig length: 715.403971224
+# of contigs: 22005
+
+File: SOAP_knorm_k35
+N50: 251.0
+Maximum contig length: 16364
+Median contig length: 96.0
+Mean contig length: 171.092821372
+Standard deviation contig length: 250.014941751
+# of contigs: 407557
+
+File: SOAP_knorm_k35_cleaned
+N50: 630
+Maximum contig length: 16364
+Median contig length: 357.0
+Mean contig length: 510.78438506
+Standard deviation contig length: 429.938617385
+# of contigs: 76414
+
+File: SOAP_knorm_k35_cleaned_rsem
+N50: 826
+Maximum contig length: 16364
+Median contig length: 487.0
+Mean contig length: 644.020174504
+Standard deviation contig length: 519.908957836
+# of contigs: 25329
+
+File: SOAP_knorm_k35_cluster
+N50: 286.0
+Maximum contig length: 16364
+Median contig length: 104.0
+Mean contig length: 189.244181175
+Standard deviation contig length: 267.489928122
+# of contigs: 341349
+
+File: SOAP_knorm_k35_cluster_cleaned
+N50: 637
+Maximum contig length: 16364
+Median contig length: 362.0
+Mean contig length: 515.565126304
+Standard deviation contig length: 432.038848892
+# of contigs: 74463
+
+File: SOAP_knorm_k35_cluster_cleaned_rsem
+N50: 834
+Maximum contig length: 16364
+Median contig length: 498.0
+Mean contig length: 652.475401428
+Standard deviation contig length: 521.96213027
+# of contigs: 25347
+
+File: SOAP_knorm_k35_cluster_rsem
+N50: 727.0
+Maximum contig length: 16364
+Median contig length: 212.0
+Mean contig length: 390.473746628
+Standard deviation contig length: 467.099854726
+# of contigs: 43004
+
+File: SOAP_knorm_k35_rsem
+N50: 683
+Maximum contig length: 10024
+Median contig length: 158.0
+Mean contig length: 337.148388932
+Standard deviation contig length: 432.328238572
+# of contigs: 49222
+
+File: SOAP_norm
+N50: 268.0
+Maximum contig length: 13336
+Median contig length: 99.0
+Mean contig length: 179.90505162
+Standard deviation contig length: 263.389595991
+# of contigs: 380670
+
+File: SOAP_norm_cleaned
+N50: 659.0
+Maximum contig length: 13336
+Median contig length: 362.0
+Mean contig length: 523.448814598
+Standard deviation contig length: 445.936720482
+# of contigs: 75080
+
+File: SOAP_norm_cleaned_rsem
+N50: 919.0
+Maximum contig length: 13336
+Median contig length: 545.0
+Mean contig length: 703.922095911
+Standard deviation contig length: 561.039009135
+# of contigs: 20936
+
+File: SOAP_norm_cluster
+N50: 299
+Maximum contig length: 13336
+Median contig length: 106.0
+Mean contig length: 195.538723178
+Standard deviation contig length: 278.432211285
+# of contigs: 327814
+
+File: SOAP_norm_cluster_cleaned
+N50: 667.0
+Maximum contig length: 13336
+Median contig length: 366.0
+Mean contig length: 527.708716883
+Standard deviation contig length: 448.160863718
+# of contigs: 73111
+
+File: SOAP_norm_cluster_cleaned_rsem
+N50: 924
+Maximum contig length: 13336
+Median contig length: 551.0
+Mean contig length: 710.093440416
+Standard deviation contig length: 561.300235681
+# of contigs: 20794
+
+File: SOAP_norm_cluster_rsem
+N50: 836
+Maximum contig length: 13336
+Median contig length: 240.0
+Mean contig length: 440.894830916
+Standard deviation contig length: 517.527886587
+# of contigs: 34687
+
+File: SOAP_norm_rsem
+N50: 798
+Maximum contig length: 12601
+Median contig length: 172.0
+Mean contig length: 381.823768259
+Standard deviation contig length: 485.071671362
+# of contigs: 40390
+
+File: TransABySS_knorm
+N50: 366
+Maximum contig length: 16734
+Median contig length: 86.0
+Mean contig length: 181.103837362
+Standard deviation contig length: 323.452832555
+# of contigs: 493021
+
+File: TransABySS_knorm_cleaned
+N50: 890.0
+Maximum contig length: 16734
+Median contig length: 414.0
+Mean contig length: 630.570645666
+Standard deviation contig length: 584.605214344
+# of contigs: 86856
+
+File: TransABySS_knorm_cleaned_rsem
+N50: 1297
+Maximum contig length: 16734
+Median contig length: 733.0
+Mean contig length: 938.915463259
+Standard deviation contig length: 796.203855892
+# of contigs: 15650
+
+File: TransABySS_knorm_cluster
+N50: 398.0
+Maximum contig length: 15160
+Median contig length: 95.0
+Mean contig length: 204.738772921
+Standard deviation contig length: 343.101795621
+# of contigs: 345259
+
+File: TransABySS_knorm_cluster_cleaned
+N50: 889.0
+Maximum contig length: 15160
+Median contig length: 414.0
+Mean contig length: 630.380102472
+Standard deviation contig length: 582.556711518
+# of contigs: 71044
+
+File: TransABySS_knorm_cluster_cleaned_rsem
+N50: 1306
+Maximum contig length: 11971
+Median contig length: 765.0
+Mean contig length: 963.635190616
+Standard deviation contig length: 786.416378404
+# of contigs: 15345
+
+File: TransABySS_knorm_cluster_rsem
+N50: 1269
+Maximum contig length: 11971
+Median contig length: 451.0
+Mean contig length: 711.280335731
+Standard deviation contig length: 770.530765727
+# of contigs: 20850
+
+File: TransABySS_knorm_rsem
+N50: 1242
+Maximum contig length: 16734
+Median contig length: 267.0
+Mean contig length: 591.595465536
+Standard deviation contig length: 743.465877877
+# of contigs: 25229
+
+File: TransABySS_norm
+N50: 300.0
+Maximum contig length: 20040
+Median contig length: 75.0
+Mean contig length: 149.276285451
+Standard deviation contig length: 292.998306778
+# of contigs: 667042
+
+File: TransABySS_norm_cleaned
+N50: 890.0
+Maximum contig length: 20040
+Median contig length: 413.0
+Mean contig length: 630.642157134
+Standard deviation contig length: 596.857910254
+# of contigs: 90305
+
+File: TransABySS_norm_cleaned_rsem
+N50: 1372.0
+Maximum contig length: 20040
+Median contig length: 788.0
+Mean contig length: 991.978103228
+Standard deviation contig length: 863.045209503
+# of contigs: 14066
+
+File: TransABySS_norm_cluster
+N50: 374
+Maximum contig length: 16251
+Median contig length: 91.0
+Mean contig length: 192.117012377
+Standard deviation contig length: 338.214335127
+# of contigs: 383703
+
+File: TransABySS_norm_cluster_cleaned
+N50: 896.0
+Maximum contig length: 16251
+Median contig length: 412.0
+Mean contig length: 632.286316373
+Standard deviation contig length: 603.406633502
+# of contigs: 72130
+
+File: TransABySS_norm_cluster_cleaned_rsem
+N50: 1356
+Maximum contig length: 16251
+Median contig length: 798.0
+Mean contig length: 995.748924358
+Standard deviation contig length: 839.069367976
+# of contigs: 14410
+
+File: TransABySS_norm_cluster_rsem
+N50: 1301.0
+Maximum contig length: 16251
+Median contig length: 387.0
+Mean contig length: 690.00922474
+Standard deviation contig length: 806.226947332
+# of contigs: 20922
+
+File: TransABySS_norm_rsem
+N50: 1280.0
+Maximum contig length: 20040
+Median contig length: 177.0
+Mean contig length: 536.080400508
+Standard deviation contig length: 760.675847969
+# of contigs: 26766
+
+File: Trinity
+N50: 815.0
+Maximum contig length: 15558
+Median contig length: 427.0
+Mean contig length: 624.460458859
+Standard deviation contig length: 542.321236542
+# of contigs: 82509
+
+File: Trinity_cluster
+N50: 803.0
+Maximum contig length: 15558
+Median contig length: 418.0
+Mean contig length: 614.875785944
+Standard deviation contig length: 535.50788132
+# of contigs: 71570
+
+File: Trinity_cluster_knorm
+N50: 727.0
+Maximum contig length: 13913
+Median contig length: 409.0
+Mean contig length: 581.140265957
+Standard deviation contig length: 474.705289089
+# of contigs: 74373
+
+File: Trinity_cluster_tnorm
+N50: 778.0
+Maximum contig length: 26504
+Median contig length: 417.0
+Mean contig length: 604.302262865
+Standard deviation contig length: 514.49096619
+# of contigs: 73049
+
+File: Trinity_knorm
+N50: 756
+Maximum contig length: 13913
+Median contig length: 422.0
+Mean contig length: 597.64371531
+Standard deviation contig length: 487.588684283
+# of contigs: 87562
+
+File: Trinity_rsem
+N50: 1277
+Maximum contig length: 13821
+Median contig length: 833.0
+Mean contig length: 996.062838892
+Standard deviation contig length: 736.397351476
+# of contigs: 13463
+
+File: Trinity_rsem_cluster
+N50: 1276.0
+Maximum contig length: 13821
+Median contig length: 842.5
+Mean contig length: 1002.66307366
+Standard deviation contig length: 734.801348467
+# of contigs: 12246
+
+File: Trinity_rsem_cluster_knorm
+N50: 822.0
+Maximum contig length: 13913
+Median contig length: 481.0
+Mean contig length: 649.731209488
+Standard deviation contig length: 509.911261703
+# of contigs: 58008
+
+File: Trinity_rsem_cluster_tnorm
+N50: 1153
+Maximum contig length: 9392
+Median contig length: 737.0
+Mean contig length: 891.727896284
+Standard deviation contig length: 641.514303755
+# of contigs: 13267
+
+File: Trinity_rsem_knorm
+N50: 844.0
+Maximum contig length: 13913
+Median contig length: 490.0
+Mean contig length: 661.717739626
+Standard deviation contig length: 520.282642196
+# of contigs: 66343
+
+File: Trinity_rsem_tnorm
+N50: 1155.0
+Maximum contig length: 9392
+Median contig length: 721.0
+Mean contig length: 882.897539258
+Standard deviation contig length: 649.073873112
+# of contigs: 16621
+
+File: Trinity_tnorm
+N50: 816.0
+Maximum contig length: 26504
+Median contig length: 433.0
+Mean contig length: 626.421656573
+Standard deviation contig length: 545.012673569
+# of contigs: 87844
+

@@ -1,0 +1,59 @@
+long_spanning_reads v2.0.14 (4318)
+--------------------------------------------
+Opening /dev/null for reading
+[samopen] SAM header is present: 49345 sequences.
+Loading reference sequences...
+        reference sequences loaded.
+Loading junctions...done
+Loading deletions...done
+Loading insertions...done
+Warning: 9480272 malformed closure
+Warning: 9567685 malformed closure
+Warning: 580829 malformed closure
+Warning: 1058287 malformed closure
+Warning: 1243391 malformed closure
+Warning: 28882720 malformed closure
+Warning: 28969858 malformed closure
+Warning: 29106331 malformed closure
+Warning: 19923142 malformed closure
+Warning: 19923142 malformed closure
+Warning: 19923142 malformed closure
+Warning: 10714378 malformed closure
+Warning: 29180272 malformed closure
+Warning: 29187096 malformed closure
+Warning: 1856704 malformed closure
+Warning: 11473297 malformed closure
+Warning: 30101873 malformed closure
+Warning: 12116222 malformed closure
+Warning: 12338178 malformed closure
+Warning: 12338178 malformed closure
+Warning: 3520846 malformed closure
+Warning: 31126267 malformed closure
+Warning: 31185780 malformed closure
+Warning: 13280490 malformed closure
+Warning: 13280490 malformed closure
+Warning: 32185564 malformed closure
+Warning: 13773003 malformed closure
+Warning: 32314215 malformed closure
+Warning: 23697032 malformed closure
+Warning: 5530080 malformed closure
+Warning: 23814905 malformed closure
+Warning: 5712263 malformed closure
+Warning: 24206263 malformed closure
+Warning: 24206263 malformed closure
+Warning: 6245394 malformed closure
+Warning: 15602730 malformed closure
+Warning: 24851345 malformed closure
+Warning: 34262976 malformed closure
+Warning: 25073639 malformed closure
+Warning: 25073639 malformed closure
+Warning: 6945632 malformed closure
+Warning: 25197085 malformed closure
+Warning: 34630257 malformed closure
+Warning: 7187233 malformed closure
+Warning: 16968117 malformed closure
+Warning: 17196550 malformed closure
+Warning: 17290868 malformed closure
+Warning: 17818442 malformed closure
+Warning: 27104073 malformed closure
+Warning: 27207032 malformed closure

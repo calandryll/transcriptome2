@@ -1,0 +1,11 @@
+/home/chris/bin/cufflinks/cuffmerge -o /media/transcriptome/analysis/merged /media/transcriptome/analysis/assemble/gtf.txt
+gtf_to_sam -F /media/transcriptome/analysis/assemble/Control_2/transcripts.gtf /media/transcriptome/analysis/merged/tmp/gtf2sam_fileWMery1
+gtf_to_sam -F /media/transcriptome/analysis/assemble/Control_3/transcripts.gtf /media/transcriptome/analysis/merged/tmp/gtf2sam_fileIootkr
+gtf_to_sam -F /media/transcriptome/analysis/assemble/Control_4/transcripts.gtf /media/transcriptome/analysis/merged/tmp/gtf2sam_filebn6HJP
+gtf_to_sam -F /media/transcriptome/analysis/assemble/Treat_1/transcripts.gtf /media/transcriptome/analysis/merged/tmp/gtf2sam_fileL14B4e
+gtf_to_sam -F /media/transcriptome/analysis/assemble/Treat_2/transcripts.gtf /media/transcriptome/analysis/merged/tmp/gtf2sam_fileRGETsO
+gtf_to_sam -F /media/transcriptome/analysis/assemble/Treat_3/transcripts.gtf /media/transcriptome/analysis/merged/tmp/gtf2sam_filedk3ZbA
+sort -k 3,3 -k 4,4n --temporary-directory=/media/transcriptome/analysis/merged/tmp/ /media/transcriptome/analysis/merged/tmp/gtf2sam_fileWMery1 /media/transcriptome/analysis/merged/tmp/gtf2sam_fileIootkr /media/transcriptome/analysis/merged/tmp/gtf2sam_filebn6HJP /media/transcriptome/analysis/merged/tmp/gtf2sam_fileL14B4e /media/transcriptome/analysis/merged/tmp/gtf2sam_fileRGETsO /media/transcriptome/analysis/merged/tmp/gtf2sam_filedk3ZbA > /media/transcriptome/analysis/merged/tmp/mergeSam_filebRyLVr
+cufflinks -o /media/transcriptome/analysis/merged/ -F 0.05 -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 1 /media/transcriptome/analysis/merged/tmp/mergeSam_filebRyLVr
+cuffcompare -o tmp_meta_asm -C -G  /media/transcriptome/analysis/merged//transcripts.gtf
+cuffcompare -o tmp_meta_asm -C -G  /media/transcriptome/analysis/merged//merged.gtf

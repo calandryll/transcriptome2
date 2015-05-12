@@ -1,0 +1,72 @@
+long_spanning_reads v2.0.14 (4318)
+--------------------------------------------
+Opening /dev/null for reading
+[samopen] SAM header is present: 49345 sequences.
+Loading reference sequences...
+        reference sequences loaded.
+Loading junctions...done
+Loading deletions...done
+Loading insertions...done
+Warning: 175825 malformed closure
+Warning: 175825 malformed closure
+Warning: 175825 malformed closure
+Warning: 8474261 malformed closure
+Warning: 8481303 malformed closure
+Warning: 8481303 malformed closure
+Warning: 8550030 malformed closure
+Warning: 478336 malformed closure
+Warning: 480200 malformed closure
+Warning: 8925581 malformed closure
+Warning: 658169 malformed closure
+Warning: 25759815 malformed closure
+Warning: 772832 malformed closure
+Warning: 772832 malformed closure
+Warning: 772832 malformed closure
+Warning: 915019 malformed closure
+Warning: 915019 malformed closure
+Warning: 915019 malformed closure
+Warning: 915019 malformed closure
+Warning: 25980089 malformed closure
+Warning: 17661641 malformed closure
+Warning: 26058498 malformed closure
+Warning: 9781098 malformed closure
+Warning: 10081498 malformed closure
+Warning: 19082494 malformed closure
+Warning: 19082494 malformed closure
+Warning: 19082494 malformed closure
+Warning: 19082494 malformed closure
+Warning: 10912436 malformed closure
+Warning: 10912436 malformed closure
+Warning: 10931058 malformed closure
+Warning: 11646500 malformed closure
+Warning: 3633186 malformed closure
+Warning: 3675427 malformed closure
+Warning: 3675427 malformed closure
+Warning: 20606202 malformed closure
+Warning: 20606202 malformed closure
+Warning: 20606202 malformed closure
+Warning: 20606202 malformed closure
+Warning: 4236640 malformed closure
+Warning: 4236640 malformed closure
+Warning: 4746834 malformed closure
+Warning: 13356746 malformed closure
+Warning: 22079878 malformed closure
+Warning: 22214074 malformed closure
+Warning: 5618383 malformed closure
+Warning: 14363602 malformed closure
+Warning: 30992106 malformed closure
+Warning: 14565549 malformed closure
+Warning: 6556474 malformed closure
+Warning: 31626260 malformed closure
+Warning: 6788539 malformed closure
+Warning: 6842871 malformed closure
+Warning: 15844075 malformed closure
+Warning: 7404009 malformed closure
+Warning: 16099536 malformed closure
+Warning: 24670376 malformed closure
+Warning: 24670376 malformed closure
+Warning: 33077863 malformed closure
+Warning: 33095571 malformed closure
+Warning: 8115574 malformed closure
+Warning: 33388403 malformed closure
+Warning: 8211418 malformed closure

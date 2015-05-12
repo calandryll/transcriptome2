@@ -1,0 +1,6 @@
+/media/transcriptome/analysis/assemble/Control_2/transcripts.gtf
+/media/transcriptome/analysis/assemble/Control_3/transcripts.gtf
+/media/transcriptome/analysis/assemble/Control_4/transcripts.gtf
+/media/transcriptome/analysis/assemble/Treat_1/transcripts.gtf
+/media/transcriptome/analysis/assemble/Treat_2/transcripts.gtf
+/media/transcriptome/analysis/assemble/Treat_3/transcripts.gtf

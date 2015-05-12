@@ -9,7 +9,7 @@ import numpy
 import os
 import glob
 
-assem_dir = "/media/transcriptome"
+assem_dir = "/media/transcriptome/assembly"
 
 print "Scanning directory %s..." % (assem_dir)
 # Pull in files
