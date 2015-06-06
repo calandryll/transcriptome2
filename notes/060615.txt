@@ -3,3 +3,10 @@
 
 Blast Search using blast_search.py against several complete CDS for Heterosigma (Ha_blast.fasta)
 H_akashiwo.fasta was the first assembly using only Vibrio samples that was used for dissertation
+
+gi|14456617|Na-ATPase - length 3993
+gi|240129575|NR1 - length 2548
+gi|355398356|NR2-2/2HbN - length 2833
+gi|146739105|prk - length 1220
+gi|603053|psbA - length 1260
+gi|32130540|psbO - length 1107

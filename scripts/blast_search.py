@@ -30,7 +30,7 @@ assem_files = sorted(glob.glob(assem_dir + "/*.fasta"))
 trim = len(list(assem_files))
 
 # Open file, this will append the file for each sequence, information is tab delimited and easily imported into Excel or other type software
-wfile = open("NR1_blast_search.txt", "a")
+wfile = open("Ha_blast.txt", "a")
 
 # Write headers of columns: Sequence Name, GI #, Title, Length, E-Value, Query Start, Subject Start, Score, Bits
 wfile.write("Sequence Name\tGI\tPercent Identity\tLength\te-value\tQuery Start\tQuery End\tSubject Start\tSubject End\tGaps\tScore\tBits\n")
@@ -49,8 +49,8 @@ for files in range(trim):
 
 	# Perform the blast search
 	os.system("blastn -db %s -out %s -query %s -outfmt 6 -evalue 0.0001 -num_threads 4" % (blast_db, out_file, sample_name))
-	wfile = open("NR1_blast_search.txt", "a")
+	wfile = open("Ha_blast.txt", "a")
 	wfile.write("File: %s \n" % (out_file))
 	wfile.close()
-	catfile = "NR1_blast_search.txt"
+	catfile = "Ha_blast.txt"
 	os.system("cat %s >> %s" % (out_file, catfile))
