@@ -17,8 +17,8 @@ assem_files = sorted(glob.glob(assem_dir + "/*.fasta"))
 output_handle = open("sequences.txt", "w")
 trim = len(list(assem_files))
 #fasta_dict = SeqIO.parse(fasta_handle, 'fasta')
-f_seq = "CTAAATAGTGTCGGTAATGCTTCT"
-r_seq = "GGCAAGTCACAATAAAGTTCCAT"
+f_seq = "TCCCTGGGCAGAAAGCAACT"
+r_seq = "GCATGATGGGCACCTCATACT"
 
 for files in range(trim):
 	sample_name2 = os.path.splitext(os.path.basename(assem_files[files]))[0]

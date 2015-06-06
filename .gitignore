@@ -10,6 +10,7 @@ trinity/
 SOAP/
 velvet/
 transabyss/
+misc/
 
 # Ignore certain files
 *.fasta

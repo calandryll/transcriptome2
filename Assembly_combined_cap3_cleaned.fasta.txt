@@ -1,6 +1,0 @@
-N50: 1310.0
-Maximum contig length: 22570
-Median contig length: 701.0
-Mean contig length: 951.42635533
-Standard deviation contig length: 835.500429748
-# of contigs: 49250

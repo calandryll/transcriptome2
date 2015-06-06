@@ -1,0 +1,5 @@
+06/06/2015
+==========
+
+Blast Search using blast_search.py against several complete CDS for Heterosigma (Ha_blast.fasta)
+H_akashiwo.fasta was the first assembly using only Vibrio samples that was used for dissertation
