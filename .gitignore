@@ -11,6 +11,8 @@ SOAP/
 velvet/
 transabyss/
 misc/
+H_akashiwo.stat/
+H_akashiwo.temp/
 
 # Ignore certain files
 *.fasta

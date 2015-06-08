@@ -23,7 +23,7 @@ from Bio import SeqIO
 import os
 import glob
 
-assem_dir = "/media/transcriptome/assembly/fasta"
+assem_dir = "/media/transcriptome/assembly"
 blast_db = "/media/transcriptome/fasta/Ha_blast"
 
 assem_files = sorted(glob.glob(assem_dir + "/*.fasta"))

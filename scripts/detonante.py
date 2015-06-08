@@ -7,7 +7,7 @@ import os
 import glob
 
 assem_dir = "/media/transcriptome/assembly"
-fastq_file = "/media/transcriptome/qc/Ha_Vib.fastq"
+fastq_file = "/media/transcriptome/qc/combined/H_akashiwo.fastq"
 length_file = "/media/transcriptome/assembly/ectocarpus.txt" # Transcript mean and SD lengths
 
 print "Scanning directory %s..." % (assem_dir)
