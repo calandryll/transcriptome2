@@ -23,18 +23,18 @@ from Bio import SeqIO
 import os
 import glob
 
-assem_dir = "/media/transcriptome/assembly"
-blast_db = "/media/transcriptome/fasta/Ha_blast"
+assem_dir = "/media/transcriptome/assembly/fasta"
+blast_db = "/media/transcriptome/assembly/fasta/trinity_all"
 
 assem_files = sorted(glob.glob(assem_dir + "/*.fasta"))
 trim = len(list(assem_files))
 
 # Open file, this will append the file for each sequence, information is tab delimited and easily imported into Excel or other type software
-wfile = open("Ha_blast.txt", "a")
+#wfile = open("Ha_blast.txt", "a")
 
 # Write headers of columns: Sequence Name, GI #, Title, Length, E-Value, Query Start, Subject Start, Score, Bits
-wfile.write("Sequence Name\tGI\tPercent Identity\tLength\te-value\tQuery Start\tQuery End\tSubject Start\tSubject End\tGaps\tScore\tBits\n")
-wfile.close()
+#wfile.write("Sequence Name\tGI\tPercent Identity\tLength\te-value\tQuery Start\tQuery End\tSubject Start\tSubject End\tGaps\tScore\tBits\n")
+#wfile.close()
 
 print "Scanning directory %s..." % (assem_dir)
 
@@ -48,9 +48,7 @@ for files in range(trim):
 	print "Analyzing %s..." % (sample_name2)
 
 	# Perform the blast search
-	os.system("blastn -db %s -out %s -query %s -outfmt 6 -evalue 0.0001 -num_threads 4" % (blast_db, out_file, sample_name))
-	wfile = open("Ha_blast.txt", "a")
-	wfile.write("File: %s \n" % (out_file))
-	wfile.close()
-	catfile = "Ha_blast.txt"
-	os.system("cat %s >> %s" % (out_file, catfile))
+	os.system("blastn -db %s -out %s -query %s -outfmt 6 -evalue 1e-20 -max_target_seqs 1 -num_threads 4" % (blast_db, out_file, sample_name))
+
+	# Write the 
+	os.system("/home/chris/bin/trinityrnaseq/util/analyze_blastPlus_topHit_coverage.pl %s %s %s" % (out_file, sample_name, blast_db))
