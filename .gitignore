@@ -12,6 +12,7 @@ velvet/
 transabyss/
 misc/
 database/
+blast/
 
 # Ignore certain files
 *.fasta
